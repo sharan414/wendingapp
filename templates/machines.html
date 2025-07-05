@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WendingApp - Machines</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <h1>WendingApp</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/profile">Profile</a>
+      <a href="/transactions">Transactions</a>
+      <a href="/transfer">Transfer</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Available Machines</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="{{ url_for('static', filename='snack_station.png') }}" alt="Snack Station">
+        <h3>Snack Station</h3>
+        <a class="btn" href="#">Access</a>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='drink_hub.png') }}" alt="Drink Hub">
+        <h3>Drink Hub</h3>
+        <a class="btn" href="#">Access</a>
+      </div>
+      <div class="card">
+        <img src="{{ url_for('static', filename='healthy_bites.png') }}" alt="Healthy Bites">
+        <h3>Healthy Bites</h3>
+        <a class="btn" href="#">Access</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 WendingApp</footer>
+</body>
+</html>

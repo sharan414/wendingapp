@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WendingApp - Transactions</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <h1>WendingApp</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/profile">Profile</a>
+      <a href="/machines">Machines</a>
+      <a href="/transfer">Transfer</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Transaction History</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Purchase</td>
+          <td>Snack Station - Chips</td>
+          <td>₹30</td>
+          <td>05 July 2025</td>
+        </tr>
+        <tr>
+          <td>Deposit</td>
+          <td>Wallet Recharge</td>
+          <td>₹500</td>
+          <td>03 July 2025</td>
+        </tr>
+        <tr>
+          <td>Transfer</td>
+          <td>To Sriman</td>
+          <td>₹150</td>
+          <td>01 July 2025</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>&copy; 2025 WendingApp</footer>
+</body>
+</html>
